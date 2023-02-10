@@ -1,0 +1,27 @@
+pipeline:
+  name: Example from GitX Template
+  identifier: Example_from_GitX_Template
+  template:
+    templateRef: account.Simple_Example_Template
+    versionLabel: 1.0.0
+    templateInputs:
+      stages:
+        - stage:
+            identifier: Hello_World
+            type: Deployment
+            spec:
+              service:
+                serviceRef: <+input>
+                serviceInputs: <+input>
+              environment:
+                environmentRef: <+input>
+                environmentInputs: <+input>
+                serviceOverrideInputs: <+input>
+                infrastructureDefinitions: <+input>
+      variables:
+        - name: message
+          type: String
+          value: <+input>
+  tags: {}
+  projectIdentifier: Test_Bed
+  orgIdentifier: default
