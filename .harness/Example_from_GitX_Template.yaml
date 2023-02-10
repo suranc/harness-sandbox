@@ -11,13 +11,11 @@ pipeline:
             type: Deployment
             spec:
               service:
-                serviceRef: <+input>
-                serviceInputs: <+input>
+                serviceRef: testservice
               environment:
-                environmentRef: <+input>
-                environmentInputs: <+input>
-                serviceOverrideInputs: <+input>
-                infrastructureDefinitions: <+input>
+                environmentRef: testenv
+                infrastructureDefinitions:
+                  - identifier: testinfradef
       variables:
         - name: message
           type: String
