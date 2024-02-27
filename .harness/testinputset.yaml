@@ -1,0 +1,11 @@
+inputSet:
+  name: test-inputset
+  identifier: testinputset
+  orgIdentifier: default
+  projectIdentifier: Test_Bed
+  pipeline:
+    identifier: testgitx
+    variables:
+      - name: testinput
+        type: String
+        value: test3
