@@ -4,4 +4,5 @@ ADD .config/gcloud/application_default_credentials.json /tmp/application_default
 ADD tmp/id_token /harness/tmp/id_token
 ENV GOOGLE_APPLICATION_CREDENTIALS=/tmp/application_default_credentials.json
 RUN gcloud auth login --brief --cred-file /tmp/application_default_credentials.json
+RUN export
 RUN gcloud artifacts repositories list --project sales-209522
