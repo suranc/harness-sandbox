@@ -1,0 +1,30 @@
+pipeline:
+  name: testsyncstage1
+  identifier: testsyncstage1
+  projectIdentifier: template_tutorial_1
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: echo
+        identifier: echo
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo test1
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
