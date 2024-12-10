@@ -1,0 +1,11 @@
+inputSet:
+  name: testgitx-bp-github-inputset
+  identifier: testgitxbpgithubinputset
+  orgIdentifier: default
+  projectIdentifier: Test_Bed
+  pipeline:
+    identifier: testgixbpgithub
+    variables:
+      - name: test
+        type: String
+        value: test
