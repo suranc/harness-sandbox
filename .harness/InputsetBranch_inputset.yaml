@@ -1,0 +1,11 @@
+inputSet:
+  name: Inputset-Branch
+  identifier: InputsetBranch
+  orgIdentifier: default
+  projectIdentifier: Test_Bed
+  pipeline:
+    identifier: Inputset_Branch
+    variables:
+      - name: input
+        type: String
+        value: test
