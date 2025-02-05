@@ -1,0 +1,30 @@
+pipeline:
+  name: Inputset Branch
+  identifier: Inputset_Branch
+  projectIdentifier: Test_Bed
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Echo
+        identifier: Echo
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo <+pipeline.variables.input>
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
