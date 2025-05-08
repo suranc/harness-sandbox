@@ -1,0 +1,30 @@
+pipeline:
+  name: GitX Test Fresh
+  identifier: GitX_Test_Fresh
+  projectIdentifier: Test_Bed
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: test
+        identifier: test
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: test
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
