@@ -4,4 +4,4 @@ spec:
       parameters:
       - name: "image"
         value: "1.0.0"
-      values: "\"image: gitops-app-update\""
+      values: "image: gitops-app-update"
