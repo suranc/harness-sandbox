@@ -1,0 +1,6 @@
+spec:
+  source:
+    helm:
+      parameters:
+      - name: image
+        value: "1.0.0"
