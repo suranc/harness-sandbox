@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: {{ include "cronjob.fullname" . }}
   labels:
-    {{- include "testaeaef.labels" . | nindent 4 }}
+    {{- include "cronjob.labels" . | nindent 4 }}
 spec:
   schedule: "* * * * *"
   jobTemplate:
