@@ -8,4 +8,4 @@ inputSet:
     variables:
       - name: input
         type: String
-        value: test
+        value: testonbranch
