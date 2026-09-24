@@ -1,5 +1,4 @@
 pipeline:
-  # comment
   name: testgix-bp-github
   identifier: testgixbpgithub
   projectIdentifier: Test_Bed
@@ -24,7 +23,7 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo test3
+                        script: echo test32
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
